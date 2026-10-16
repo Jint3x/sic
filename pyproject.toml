@@ -1,3 +1,14 @@
+[project]
+name = "sic"
+version = "0.1.0"
+description = "Agent chat server"
+requires-python = ">=3.14,<3.15"
+dependencies = []
+
+[tool.uv]
+package = false
+required-version = "==0.12.23"
+
 [dependency-groups]
 dev = ["ruff==0.17.1", "pre-commit==4.7.0"]
 
