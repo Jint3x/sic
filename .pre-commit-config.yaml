@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: Ruff lint and import sorting
+        entry: python -m ruff check .
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: ruff-format
+        name: Ruff format check
+        entry: python -m ruff format --check .
+        language: system
+        pass_filenames: false
+        always_run: true
