@@ -1,6 +1,9 @@
 [dependency-groups]
-dev = ["ruff==0.17.1"]
+dev = ["ruff==0.17.1", "pre-commit==4.7.0"]
 
 [tool.ruff]
 target-version = "py314"
-# Keep Ruff's default lint rules (E4, E7, E9, and F).
+
+[tool.ruff.lint]
+# Keep the default rules (E4, E7, E9, and F), and add import sorting.
+extend-select = ["I"]
